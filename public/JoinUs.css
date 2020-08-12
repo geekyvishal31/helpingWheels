@@ -1,0 +1,45 @@
+.top-image{
+	width: 100%;
+	height: 90vh;
+}
+
+.top-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.header{
+	width: 100%;
+	margin-top: 40px;
+	color: #009688;
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+
+
+
+.header:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto;
+    width: 20%;
+    border-bottom: 1px solid black;
+}
+
+.btns{
+	width: 50%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.btns >button> a{
+	color: white
+}
+
+
+.btns button{
+	margin-top: 30px;
+	width: 100%;
+}

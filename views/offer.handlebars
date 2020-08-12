@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>{{sTitle}}</title>
+    <link rel="stylesheet" type="text/css" href="findRide.css">
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Helping Wheels</a>
+        </div>
+        <!--<ul class="nav navbar-nav">-->
+        <!--<li class="active"><a href="/home">Home</a></li>-->
+        <!--</ul>-->
+
+    </div>
+</nav>
+<body>
+
+
+
+<div class="form-div">
+		<div class="card card-form">
+		  <div class="card-body">
+
+		  	<div class= "form-header-content text-center">
+		  		<h3>Offer A Ride</h3>
+		  	</div>
+
+		    <div class="form">
+		    	<form action="/find" method="post">
+		    		<div>
+		    			<label class="form-content">Name</label>
+                        <input value="{{name}}" type="text" name="name" class="form-content">
+
+		    			<label class="form-content">Source</label>
+                        <input value="{{source}}" type="textbox" name="source" class="form-content" />	
+		    			
+		    			<label class="form-content">Destination</label>
+                        <input value="{{destination}}" type="textbox" name="destination" class="form-content" />
+		    			
+		    			<label class="form-content">No. Of Member</label>
+                        <input value="{{members}}" type="textbox" name="members" class="form-content"/>
+		    			
+		    			<label class="form-content">Contact</label>
+                        <input value="{{mobile}}" type="textbox" name="mobile" class="form-content" />
+      					
+		    		</div>
+
+		    		<div class="btns text-center">
+		    			<button type="submit" class="btn btn-primary" href="/confirmride?id={{id}}">Offer A Ride</button>
+		    		</div>
+
+		    	</form>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+
+
+</body>
+
+
+
+{{!-- <script>
+      function send(){
+            
+             socket.emit('ride',{
+                  name:{{pName}},
+                  source:{{src}},
+                  destiny:{{dest}},
+                  members:{{member}},
+                  mobile:{{number}}
+             });
+
+             socket.on('ride',function(data){
+             output.innerHTML += '<p><strong>' + data.name + ':</strong>' + data.source + '</p>';
+});
+        }
+    </script> --}}
+
+    {{!-- <div class="container">
+    <form action="/complete-registration" method="post">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="exampleInputLastName" class="form-text">Destination:</label>
+                    <input type="text" name="application_number" id="exampleInputName" class="form-control input-sm">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="exampleInputLastName" class="form-text">Route:</label>
+                    <input type="text" name="application_number" id="exampleInputName" class="form-control input-sm">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="exampleInputLastName" class="form-text">No. of seats:</label>
+                    <input type="text" name="receipt_number" id="exampleInputName" class="form-control input-sm">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="bt-p">
+        <a type="button" class="btn btn-primary" href="#">Offer</a>
+    </div>
+
+</div> --}}

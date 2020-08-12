@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{sTitle}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signup"><span class="glyphicon glyphicon-sign-in"></span>SignIn</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="form-div">
+		<div class="card card-form">
+		  <div class="card-body">
+
+		  	<div class= "form-header-content text-center">
+		  		<h3>Login</h3>
+		  	</div>
+
+		    <div class="form">
+		    	<form action="/login" method="post">
+		    		<div>
+		    			<label class="form-content">Customer Id</label>
+              <input type="textbox" name="customerId" class="form-content" placeholder="Customer Id">
+
+		    			
+		    			<label class="form-content">Password</label>
+              <input class="form-content"  type="password" name="password" Placeholder="Password"/>
+		    		</div>
+
+		    		<div class="checkbox">
+		    			<input type="checkbox" name="value" value ="true" style="width: auto;"><strong>Check Me Out</strong>	
+		    		</div>
+		    		
+		    		<div class="btns">
+		    			<button class="btn btn-primary">Login</button>	
+		    		</div>
+		    		
+		    	</form>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
+

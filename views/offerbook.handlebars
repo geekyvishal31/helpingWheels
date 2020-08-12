@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="OfferARide.css">
+    <title>{{sTitle}}</title>
+    {{>header}}
+</head>
+
+<body>
+
+<div class="top-image">
+	<img src="car1.jpg" />
+</div>
+
+<div class="below-image-message">
+	<div class="card Message-card">
+		<div class="card-body">
+			<p>In order to secure the ride of our user,we need to ensure that the person offerinf ride is our registered member.</p>
+		</div>
+	</div>
+</div>
+
+<div class="card card-form">
+		<div class="card-body">
+
+			<div class= "form-header-content text-center">
+		  		<h3>Offer A Ride</h3>
+		  	</div>
+
+            <div class="form">
+	            <form action="/verifymember" method="post">
+		        
+                <div>
+		            <label class="form-content">Enter Member ID</label>
+                    <input type="string" name="memberId" class="form-content" placeholder="Member ID">
+
+		            <label class="form-content">Registered Contact</label>
+                    <input type="number" name="mobile" class="form-content" placeholder="Contact Number" />
+				</div>
+
+		        <div class="btns text-center">
+		            <button class="btn btn-primary" type="submit">Find A Ride</button>
+		        </div>
+
+		        <div class="Registration-link">
+		            <p>Not A Member Yet? <a href="/signup">Sign Up</a></p>
+		        </div>
+
+	            </form>
+            </div>	
+		</div>
+</div>
+
+</body>
+</html>
+
+{{!-- <div class="option">
+    
+    <form action="/verifymember" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Enter your MemberId:</label>
+        <input type="string" name="memberId" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Member ID">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your customer id with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Registered Mobile Number</label>
+        <input type="number" name="mobile" class="form-control" id="exampleInputPassword1" placeholder="Enter mobile number">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    
+    <small id="emailHelp" class="form-text text-muted">Not a member yet?...Become a member..,Do register.</small>
+    <a type="button" href="/signup" class="btn btn-primary btn-lg btn-block">SignIn</a>
+
+</div> --}}

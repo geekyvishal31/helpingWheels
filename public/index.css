@@ -1,0 +1,241 @@
+.insideNavbar{
+	width: 100%;
+	height: 80px;
+	background-color: #008000b8;
+	color: white;
+	display: block;
+	/*margin-bottom: 0;*/
+
+}
+
+.nav-logo{
+	display: block;
+	position: absolute;
+	margin: 10px 10px;
+	padding: 15px 10px;
+	text-align: center;
+	float: left;
+}
+
+.nav-links{
+	display: inline-flex;
+	margin: 0px 140px 10px 0px;
+	padding: 20px 20px;
+	float: right;
+}
+
+.nav-links ul {
+	list-style: none;
+}
+
+.nav-links > ul > li{
+	text-decoration: none;
+	float: left;
+	padding-left: 20px;
+	padding-right: 50px;
+	cursor: pointer;
+}
+
+li:hover{
+	color: black;
+	transition: 0.3s ease-in;
+}
+
+.SignIn{
+	display: inline-flex;
+	float: right;
+	border: 2px solid white;
+	background-color: transparent;
+	/* color: white; */
+	border-radius: 20px;
+	height: 35px;
+	margin: 15px 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: absolute;
+	left: 90%;
+}
+
+.SignIn > a{
+	color: white;
+}
+
+.login{
+	display: inline-flex;
+	float: right;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	border-radius: 20px;
+	height: 35px;
+	margin: 15px 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: absolute;
+	left: 85%;
+}
+
+.login > a{
+	color: white;
+}
+
+.login:hover{
+	background-color: white;
+	transition: 0.3s ease-in;
+	cursor: pointer;
+}
+
+.login > a:hover{
+	color: #008000b8;
+}
+
+.SignIn:hover{
+	background-color: white;
+	color: #008000b8;
+	transition: 0.3s ease-in;
+	cursor: pointer;
+
+}
+
+.SignIn >a:hover{
+	color: #008000b8;
+}
+
+#demo{
+	margin: 0;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 88vh;
+}
+
+.main-content{
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+
+.Services{
+	margin: 40px 0px 30px 50px;
+}
+
+.card{
+	display: inline-flex;
+	width: 30%;
+	margin-right: 20px;
+	text-align: center;
+	border: none;
+}
+
+.service-card{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.service-card:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	cursor: pointer;
+}
+
+.card-icon{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.fas{
+	color: #0e3c0ebf;
+}
+
+.card-content{
+	margin-top: 10px;
+	padding: 10px 20px;
+}
+
+.parallax-window {
+	margin-top: 100px;
+    min-height: 400px;
+    background: transparent;
+}
+
+.authors{
+	margin-top: 50px;
+}
+
+.author_head h2{
+	padding: 10px 0px 0px 10px;
+	border-bottom: 5px solid green;
+	margin-left: 50px;
+	width: 40px;
+}
+
+.card-deck{
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.card img{
+	margin-left: 30px;
+	width: 80%;
+	border-radius: 50%;
+}
+
+.footer{
+	margin-top: 50px;
+	width: 100%;
+	height: 300px;
+	background-color: #32404e;
+	
+}
+
+.col{
+	display: inline-block;
+	padding-top: 20px;
+	margin-left: 40px;
+	width: 30%;
+	color: white;
+}
+
+.form input{
+	width: 80%;
+	border: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+.findUs-links{
+	
+	margin-top: 30px;
+}
+
+.findUs-links ul{
+	padding: 0;
+}
+
+.findUs-links ul li{
+	list-style: none;
+	padding-top: 10px;
+	color: #a2a2a2;
+}
+#output{
+	width: 100%;
+	height: 100px;
+	background-color:white;
+}
+
+.image{
+	
+	width: 100%;
+	
+	margin-top: 80px;
+	height: 80vh;
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+}
